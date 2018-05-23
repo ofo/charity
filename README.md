@@ -39,7 +39,7 @@ extern "C" { \
 
 ````
 
-3. 要使合约内毒可以调用另个一个合约的接口，对应的账号必须增加contract@eosio.code的授权
+3. 要使合约内部可以调用另一个合约的接口，对应的账号必须增加contract@eosio.code的授权
    本例需要charity对自己active权限增加charity@eosio.code的授权
    ````bash
    cleos set account permission charity active '{"threshold": 1,"keys": [{"key": "EOS7ijWCBmoXBi3CgtK7DJxentZZeTkeUnaSDvyro9dq7Sd1C3dC4","weight": 1}],"accounts": [{"permission":{"actor":"charity","permission":"eosio.code"},"weight":1}]}' owner -p charity
