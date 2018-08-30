@@ -9,7 +9,7 @@ A very simple smart contract of EOS, to demo action processing: when received do
 
 2. 持久化存储
 
-   persistent storage
+   Persistent storage
 
 3. 合约内调用另一个合约的接口
 
@@ -45,7 +45,7 @@ extern "C" { \
 
 2. 使用自增主键
 
-   auto increment primary key
+   Auto increment primary key
 
 ````c++
     trans_table.emplace(_self, [&](auto &s) {
@@ -66,8 +66,7 @@ extern "C" { \
    ````bash
    cleos set account permission charity active '{"threshold": 1,"keys": [{"key": "EOS7ijWCBmoXBi3CgtK7DJxentZZeTkeUnaSDvyro9dq7Sd1C3dC4","weight": 1}],"accounts": [{"permission":{"actor":"charity","permission":"eosio.code"},"weight":1}]}' owner -p charity
    ````
-   
-    eosio.code权限更多内容请参考https://github.com/EOSIO/eos/issues/3050
-   
-    For more information of eosio.code, please refer to https://github.com/EOSIO/eos/issues/3050
-   
+
+eosio.code权限更多内容请参考https://github.com/EOSIO/eos/issues/3050
+
+For more information of eosio.code, please refer to https://github.com/EOSIO/eos/issues/3050
